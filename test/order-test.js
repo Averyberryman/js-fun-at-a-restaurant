@@ -268,7 +268,7 @@ describe("order.js", function() {
       assert.isFunction(searchOrder);
     });
 
-    it.skip("should tell us if an order is in the list", function() {
+    it("should tell us if an order is in the list", function() {
       var order1 = {
         orderNumber: 1234,
         item: "burger",
@@ -292,7 +292,7 @@ describe("order.js", function() {
       assert.equal(searchOrder(deliveryOrders, "blt sandwich"), true);
     });
 
-    it.skip("should tell us if an order is in another list", function () {
+    it("should tell us if an order is in another list", function () {
       var order1 = {
         orderNumber: 6357,
         item: "mac and cheese",

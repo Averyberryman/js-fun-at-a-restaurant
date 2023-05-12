@@ -27,9 +27,15 @@ function listItems(deliveryOrders) {
   return items
 }
 
-function searchOrder () {
-
+function searchOrder (deliveryOrders, item) { 
+  for (var i = 0; i < deliveryOrders.length; i ++) {
+    if (deliveryOrders[i].item.includes(item)) {
+      return true
+    }
+  } 
+  return false;
 }
+
 
 
 module.exports = {
